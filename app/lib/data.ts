@@ -9,6 +9,8 @@ import {
 } from './definitions';
 import { formatCurrency } from './utils';
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+
 export async function fetchRevenue() {
   try {
     // Artificially delay a response for demo purposes.
